@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summary | FutureHealth</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="mesh-bg"></div>
+    <div class="summary-card">
+        <div id="receiptArea">
+            <div class="check-icon">✓</div>
+            <h2>Appointment Confirmed</h2>
+            <div class="details-list">
+                <p>NAME: <span id="outName"></span></p>
+                <p>UNIT: <span id="outDept"></span></p>
+                <p>TIME: <span id="outDate"></span> at <span id="outTime"></span></p>
+            </div>
+        </div>
+        <button class="neon-btn" onclick="downloadReceipt()">Download PDF</button>
+        <button class="btn-outline" onclick="goHome()">New Booking</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

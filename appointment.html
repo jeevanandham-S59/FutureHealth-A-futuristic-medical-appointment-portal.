@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking | FutureHealth</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="mesh-bg"></div>
+
+    <div class="loading-overlay" id="loader">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Synchronizing Data...</div>
+    </div>
+
+    <div class="form-shell">
+        <h2>Patient Registration</h2>
+        <form id="bookingForm">
+            <input type="text" id="pName" placeholder="Full Name" required>
+            <select id="pDept" required>
+                <option value="" disabled selected>Select Specialist</option>
+                <option>Neurology</option>
+                <option>Cardiology</option>
+                <option>Dental</option>
+            </select>
+            <div class="row">
+                <input type="date" id="pDate" required>
+                <input type="time" id="pTime" required>
+            </div>
+            <button type="submit" class="neon-btn">Confirm Registration</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

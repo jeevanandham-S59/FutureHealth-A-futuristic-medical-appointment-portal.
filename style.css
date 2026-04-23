@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&display=swap');
+
+:root { --neon: #00f2ff; --purple: #7000ff; --dark: #050810; }
+
+body { background: var(--dark); color: white; font-family: 'Outfit', sans-serif; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow-x: hidden; }
+
+.mesh-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: radial-gradient(at 0% 0%, rgba(0, 242, 255, 0.1), transparent 50%), radial-gradient(at 100% 100%, rgba(112, 0, 255, 0.1), transparent 50%); }
+
+.hero-container { text-align: center; }
+.block-title { font-size: 5rem; font-weight: 900; margin: 0; }
+.neon-text { color: var(--neon); text-shadow: 0 0 20px var(--neon); }
+.tagline { letter-spacing: 5px; opacity: 0.5; font-size: 0.7rem; margin-bottom: 40px; }
+
+.specialist-grid { display: flex; gap: 20px; justify-content: center; margin-bottom: 40px; }
+.spec-card { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); width: 100px; }
+.spec-card span { font-size: 2rem; }
+
+.form-shell, .summary-card { background: rgba(255,255,255,0.05); backdrop-filter: blur(15px); padding: 40px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1); width: 350px; text-align: center; }
+
+input, select { width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(0,0,0,0.3); border: 1px solid #e7eaed; border-radius: 10px; color: rgb(242, 233, 233); box-sizing: border-box; }
+.row { display: flex; gap: 10px; }
+
+.neon-btn { background: var(--neon); color: black; padding: 15px 30px; border-radius: 50px; font-weight: 900; border: none; cursor: pointer; text-decoration: none; display: inline-block; box-shadow: 0 0 20px rgba(0,242,255,0.4); }
+
+.btn-outline { background: transparent; border: 1px solid var(--neon); color: var(--neon); padding: 10px; border-radius: 50px; cursor: pointer; width: 100%; margin-top: 10px; }
+
+.loading-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--dark); display: none; flex-direction: column; justify-content: center; align-items: center; z-index: 100; }
+.loader-ring { width: 50px; height: 50px; border: 3px solid rgba(0,242,255,0.1); border-top: 3px solid var(--neon); border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.details-list { text-align: left; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; margin: 20px 0; }
+.details-list span { color: var(--neon); font-weight: bold; float: right; }
+.check-icon { font-size: 3rem; color: var(--neon); }
